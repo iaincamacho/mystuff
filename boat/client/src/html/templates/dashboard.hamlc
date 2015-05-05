@@ -1,0 +1,179 @@
+.container
+  .header
+    %h1
+      Sebastián Campos
+      %span.superheader
+        Welcome
+    .rightSection
+      .unit
+        /%img.weather{src: '/assets/cloudy.jpg'}
+        .text
+          56&deg;L - 87&deg;H
+          %br
+          Partly Cloudy
+      .unit
+        /%img.clock{src: '/assets/clock.jpg'}
+        .text
+          10:12pm EST
+          %br
+          08/14/2014
+  .leftSide
+    .search.dashboard
+      .fieldset
+        %label
+          Search for a person, organization or vehicle.
+        %input#quickSearch{type: 'text', placeholder: 'Search here', ng-model: 'boat.search'}
+        .selectContainer#qsselect
+          %select#quicksearchselect
+            %option
+              All
+            %option
+              %i.fa.fa-users
+              People
+            %option
+              %i.fa.fa-building
+              Companies
+            %option
+              %i.fa.fa-car
+              Vehicles
+        %a.searchIcon{href: '/results'}
+          %i.fa.fa-search
+        %a
+          Advanced Search
+    .searchResults
+      %h3
+        Recent Searches
+      .task.searchResult
+        %a
+          %h4
+            Paul C
+              %i.fa.fa-arrow-circle-o-right{style: 'position:relative;float:right;'}
+              %span{style: 'color:#333; font-size:.75em;margin-right:20px;float:right;'}
+                People - Results: 21
+      .task.searchResult
+        %a
+          %h4
+            430-22
+              %i.fa.fa-arrow-circle-o-right{style: 'position:relative;float:right;'}
+              %span{style: 'color:#333; font-size:.75em;margin-right:20px;float:right;'}
+                Companies - Results: 92
+      .task.searchResult
+        %a{href: '/profile'}
+          %h4
+            HIN: 39 2993 - Type: Sail
+              %i.fa.fa-arrow-circle-o-right{style: 'position:relative;float:right;'}
+              %span{style: 'color:#333; font-size:.75em;margin-right:20px;float:right;'}
+                Vehicles -  Results: 220
+      .task.searchResult
+        %a
+          %h4
+            1290-3094-004932
+              %i.fa.fa-arrow-circle-o-right{style: 'position:relative;float:right;'}
+              %span{style: 'color:#333; font-size:.75em;margin-right:20px;float:right;'}
+                All - Results: 1
+  .rightSide
+    %h3
+      Recent Activity
+    .activity
+      .title
+        Temporary Registration
+      %p
+        Nina Gupta's temporary registration was approved on boat HIN:
+        %a
+          TRU 12345-M 84 E
+        by
+        %em
+          Karen C.
+      .timeStamp
+        %i.fa.fa-clock-o
+        2hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        2 Comments
+    .activity
+      .title
+        Title Submitted
+      %p
+        Nina Gupta's title was submitted for boat HIN:
+        %a
+          FAK 49392-C 93 F
+        by
+        %em
+          Josiah K.
+      .timeStamp
+        %i.fa.fa-clock-o
+        4hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        1 Comments
+    .activity
+      .title
+        Temporary Registration
+      %p
+        Nina Gupta's temporary registration was approved on boat
+        %a
+          HIN TRU 12345-M 84 E
+      .timeStamp
+        %i.fa.fa-clock-o
+        2hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        2 Comments
+    .activity
+      .title
+        Temporary Registration
+      %p
+        Nina Gupta's temporary registration was approved on boat
+        %a
+          HIN TRU 12345-M 84 E
+      .timeStamp
+        %i.fa.fa-clock-o
+        2hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        2 Comments
+    .activity
+      .title
+        Temporary Registration
+      %p
+        Nina Gupta's temporary registration was approved on boat
+        %a
+          HIN TRU 12345-M 84 E
+      .timeStamp
+        %i.fa.fa-clock-o
+        2hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        2 Comments
+    .activity
+      .title
+        Temporary Registration
+      %p
+        Nina Gupta's temporary registration was approved on boat
+        %a
+          HIN TRU 12345-M 84 E
+      .timeStamp
+        %i.fa.fa-clock-o
+        2hrs ago
+      .status
+        %i.fa.fa-check
+        Approved
+      .timeStamp
+        %i.fa.fa-comment-o
+        2 Comments
+

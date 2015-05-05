@@ -1,0 +1,23 @@
+.loginBg
+  .login
+    %p
+      Welcome to The Commonwealth of Massachusetts OLE Support System
+    .form
+      .fieldset
+        %input{type: 'text', placeholder: 'User Name'}
+        .switch
+          / %input#pwsremember.toggle{type: 'checkbox'}
+          / %label{for: 'pwsremember'}
+          %span
+            %a
+              Remember Me
+      .fieldset
+        %input{type: 'password', placeholder: 'Password'}
+        .switch
+          %span
+            %a
+              Fogot Password
+      .fieldset.half.first
+      .fieldset.half.second
+        %a.button.lightBlue{href: '/dashboard'}
+          Log In

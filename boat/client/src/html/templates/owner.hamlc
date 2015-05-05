@@ -1,0 +1,63 @@
+.container.boat
+  .header
+    %h1
+      Boat Registration
+    .rightSection
+      %a.unit
+        %img.clock{src: '/assets/back.jpg'}
+        .text
+          Return to
+          %br
+          Christopher R.
+  .leftSide.fee
+    %h3
+      Registrant Information
+      %a
+        %i.fa.fa-plus-circle
+        Add Additional Registrant(s)
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          First Name
+        %p
+          Christpher
+      .fieldset.half.last.inputless
+        %label
+          Middle Initial
+        %p
+          P
+    .fieldset.half.last.inputless
+      %label
+        Last Name
+      %p
+        Russell
+    .fieldset.half.first.inputless
+      %label
+        Customer ID Number
+      %p
+        P-5284840-599403-0293 A
+    .fieldset.half.last.inputless
+      %label
+        Registration Number
+      %p
+        M500-000-089900-0
+    %a.lightBlue{href: '/documents'}
+      Next
+  .rightSide
+    .activity
+      .title
+        %a{href: '/boatregistration'}
+          Boat Details
+    .activity.active
+      .title
+        %a{href: '/owners'}
+          %i.fa.fa-arrow-circle-o-left
+          Registrant Information
+    .activity
+      .title
+        %a{href: '/documents'}
+          Documents
+    .activity
+      .title
+        %a{href: '/fee'}
+          Fees and Payments

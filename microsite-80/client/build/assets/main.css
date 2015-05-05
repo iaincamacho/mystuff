@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|family=Lato:300,400,700);
+* {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #575e64;
+  background: #ffffff;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #2e3192;
+  text-decoration: none; }
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto; }
+
+.nojs {
+  text-align: center;
+  background: #ff0000;
+  padding: 1em 0;
+  color: #fff;
+  font-size: 0.75em; }
+
+.header {
+  background: url(/assets/header-bg.jpg) center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 175px; }
+  .header .toptext, .header .bottomtext {
+    font-size: 24px; }
+  .header .maintext {
+    margin: 30px auto;
+    width: 90%;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 70px; }
+  .header img {
+    margin: 80px 0 20px 0;
+    padding: 20px 0;
+    opacity: 0.8; }
+    .header img:hover {
+      opacity: 0.99; }
+
+.fixedheader {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .fixedheader .logo {
+    position: relative;
+    float: left;
+    margin: 30px 0 0 0;
+    width: 108px;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8; }
+    .fixedheader .logo img {
+      margin-top: 0.8em; }
+    .fixedheader .logo:hover {
+      opacity: 0.99; }
+  .fixedheader nav, .fixedheader .nav {
+    position: relative;
+    float: right;
+    margin-top: 60px; }
+    .fixedheader nav a, .fixedheader .nav a {
+      margin-left: 30px;
+      color: rgba(255, 255, 255, 0.75);
+      text-transform: uppercase; }
+      .fixedheader nav a:hover, .fixedheader .nav a:hover {
+        color: rgba(255, 255, 255, 0.9); }

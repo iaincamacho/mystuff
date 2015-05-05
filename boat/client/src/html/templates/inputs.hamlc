@@ -1,0 +1,28 @@
+This is the home page
+
+.fieldset
+  %label
+    Test
+  %input{type: 'text', placeholder: 'ex. Testing'}
+.fieldset.half.first
+  %label
+    Test
+  %input{type: 'text', placeholder: 'ex. Testing'}
+.fieldset.half.second
+  %label
+    Test
+  %input{type: 'text', placeholder: 'ex. Testing'}
+.fieldset.half.first
+  .toggle-switch
+    -# HACK - handle rounded corners overflow-hidden
+    %input#toggle-input{ :type => "checkbox", checked: true }
+    %span
+      %label{ :for => "toggle-input" }
+        %b
+.fieldset.half.second
+  .switch
+    %input#cmn-toggle-1.toggle{type: 'checkbox'}
+    %label{for: 'cmn-toggle-1'}
+
+%a.lightBlue
+  Submit

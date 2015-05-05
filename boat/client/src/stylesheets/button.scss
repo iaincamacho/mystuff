@@ -1,0 +1,44 @@
+@mixin button($color) {
+  position:relative;
+  float:right;
+  margin:20px 0;
+  padding:10px 20px;
+  border:2px solid darken($color, 4%);
+  background:$color;
+  border-radius:$borderRadius;
+  color:#fff;
+  cursor:pointer;
+
+  &:hover {
+    border:2px solid darken($color, 6%);
+    background:darken($color, 3%);
+    color:#fff;
+  }
+
+  &.small {
+    margin:0;
+    padding:5px 19px;
+    font-size:.7em;
+    color:$black;
+  }
+  &.outline {
+    background:none;
+    color:$lightBlue;
+    border-color:$color;
+
+    &:hover {
+      background:none;
+      color:darken($lightBlue, 10%);
+    }
+  }
+}
+
+.lightBlue {
+  @include button($lightBlue);
+}
+.lightGrey {
+  @include button($lightGrey);
+  &:hover {
+    color:$lightBlue;
+  }
+}

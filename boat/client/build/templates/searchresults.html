@@ -1,0 +1,322 @@
+<div class='spinnerContainer'>
+  <div class='spinner'>
+    <div class='bounce1'></div>
+    <div class='bounce2'></div>
+    <div class='bounce3'></div>
+  </div>
+</div>
+<div class='container'>
+  <div class='header'>
+    <h1>
+      Sebastián Campos
+      <span class='superheader'>
+        Welcome
+      </span>
+    </h1>
+    <div class='rightSection'>
+      <div class='unit'>
+        <!-- %img.weather{src: '/assets/cloudy.jpg'} -->
+        <div class='text'>
+          56&deg;L - 87&deg;H
+          <br>
+          Partly Cloudy
+        </div>
+      </div>
+      <div class='unit'>
+        <!-- %img.clock{src: '/assets/clock.jpg'} -->
+        <div class='text'>
+          10:12pm EST
+          <br>
+          08/14/2014
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='leftSide'>
+    <div class='dashboard search'>
+      <div class='fieldset'>
+        <label>
+          Search for a person, organization or vehicle.
+        </label>
+        <input id='quickSearch' type='text' placeholder='enter SSN, FEIN, VIN, or HIN Number ' ng-model='boat.search'>
+        <div class='selectContainer' id='qsselect'>
+          <select>
+            <option>
+              All
+            </option>
+            <option selected>
+              <i class='fa fa-users'></i>
+              People
+            </option>
+            <option>
+              <i class='fa fa-building'></i>
+              Companies
+            </option>
+            <option>
+              <i class='fa fa-car'></i>
+              Vehicles
+            </option>
+          </select>
+        </div>
+        <a class='searchIcon' href='/profile'>
+          <i class='fa fa-search'></i>
+        </a>
+        <a class='lightGrey' style='background:none;'>
+          Advanced Search
+        </a>
+      </div>
+    </div>
+    <div class='searchResults' style='display:none;height:auto;'>
+      <h3>
+        Search Results
+      </h3>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            Leyla Arslan
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>
+                Customer ID C-654325-9986-0293 A
+              </span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            Peter Bradley
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>
+                Customer ID A-563187-4536-7756 L
+              </span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a href='/profile'>
+          <h4>
+            Christopher Russell
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>
+                Customer ID P-528484-5994-0293 A
+              </span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            Angela Guerra
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>
+                Customer ID C-678412-9883-1113 C
+              </span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            Fatma Turanlı
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>
+                Customer ID FP-31564-8523-7795 B
+              </span>
+          </h4>
+        </a>
+      </div>
+    </div>
+    <div class='searchResults'>
+      <h3>
+        Recent Searches
+      </h3>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            Paul C
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>People - Results: 21</span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            430-22
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>Companies - Results: 92</span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a href='/profile'>
+          <h4>
+            HIN: 39 2993 - Type: Sail
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>Vehicles -  Results: 220</span>
+          </h4>
+        </a>
+      </div>
+      <div class='searchResult task'>
+        <a>
+          <h4>
+            1290-3094-004932
+              <i class='fa fa-arrow-circle-o-right' style='position:relative;float:right;'></i>
+              <span style='color:#333; font-size:.75em;margin-right:20px;float:right;'>All - Results: 1</span>
+          </h4>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='rightSide'>
+    <h3>
+      Recent Activity
+    </h3>
+    <div class='activity'>
+      <div class='title'>
+        Temporary Registration
+      </div>
+      <p>
+        Nina Gupta's temporary registration was approved on boat HIN:
+        <a>
+          TRU 12345-M 84 E
+        </a>
+        by
+        <em>
+          Karen C.
+        </em>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        2hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        2 Comments
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        Title Submitted
+      </div>
+      <p>
+        Nina Gupta's title was submitted for boat HIN:
+        <a>
+          FAK 49392-C 93 F
+        </a>
+        by
+        <em>
+          Josiah K.
+        </em>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        4hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        1 Comments
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        Temporary Registration
+      </div>
+      <p>
+        Nina Gupta's temporary registration was approved on boat
+        <a>
+          HIN TRU 12345-M 84 E
+        </a>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        2hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        2 Comments
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        Temporary Registration
+      </div>
+      <p>
+        Nina Gupta's temporary registration was approved on boat
+        <a>
+          HIN TRU 12345-M 84 E
+        </a>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        2hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        2 Comments
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        Temporary Registration
+      </div>
+      <p>
+        Nina Gupta's temporary registration was approved on boat
+        <a>
+          HIN TRU 12345-M 84 E
+        </a>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        2hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        2 Comments
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        Temporary Registration
+      </div>
+      <p>
+        Nina Gupta's temporary registration was approved on boat
+        <a>
+          HIN TRU 12345-M 84 E
+        </a>
+      </p>
+      <div class='timeStamp'>
+        <i class='fa fa-clock-o'></i>
+        2hrs ago
+      </div>
+      <div class='status'>
+        <i class='fa fa-check'></i>
+        Approved
+      </div>
+      <div class='timeStamp'>
+        <i class='fa fa-comment-o'></i>
+        2 Comments
+      </div>
+    </div>
+  </div>
+</div>

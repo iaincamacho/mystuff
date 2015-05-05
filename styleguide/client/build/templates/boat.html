@@ -1,0 +1,746 @@
+<div class='boat container'>
+  <div class='header'>
+    <h1>
+      Boat Registration
+    </h1>
+    <div class='rightSection'>
+      <a class='unit'>
+        <img class='clock' src='/assets/back.jpg'>
+        <div class='text'>
+          Return to
+          <br>
+          Christopher R.
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class='leftSide'>
+    <h3>
+      Boat Details
+    </h3>
+    <div class='dashboard search'>
+      <div class='fieldset'>
+        <input id='hin' type='text' placeholder='Quick Search by HIN ' val=''>
+        <a class='searchIcon' ng-click='showNoResult()' style='top:8px;'>
+          <i class='fa fa-search'></i>
+        </a>
+        <a class='advanced'>
+          Advanced Search
+        </a>
+      </div>
+      <div class='noResult'>
+        No Results Found - Please Add a New Record
+      </div>
+    </div>
+    <div class='advancedsearch'>
+      <div class='fieldset'>
+        <label>
+          Hull Identification Number
+        </label>
+        <input type='text' placeholder='ex. 12 - 1123 - 45 - A36 -532' ng-model='boat.hin'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Effective Date
+        </label>
+        <input type='text' placeholder='ex. 2012' value="{{date | date:'MM-dd-yyyy'}}">
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Previously Registered
+        </label>
+        <div class='selectContainer' id='registeredbefore'>
+          <select ng-click="activate('registeredbefore')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Yes
+            </option>
+            <option>
+              No
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Previous State
+        </label>
+        <div class='selectContainer' id='state'>
+          <select ng-click="activate('state')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Alabama
+            </option>
+            <option>
+              Alaska
+            </option>
+            <option>
+              Arizona
+            </option>
+            <option>
+              Arkansas
+            </option>
+            <option>
+              California
+            </option>
+            <option>
+              Colorado
+            </option>
+            <option>
+              Colorado
+            </option>
+            <option>
+              Connecticut
+            </option>
+            <option>
+              Delaware
+            </option>
+            <option>
+              Florida
+            </option>
+            <option>
+              Georgia
+            </option>
+            <option>
+              Hawaii
+            </option>
+            <option>
+              Idaho
+            </option>
+            <option>
+              Illinois
+            </option>
+            <option>
+              Indiana
+            </option>
+            <option>
+              Iowa
+            </option>
+            <option>
+              Kansas
+            </option>
+            <option>
+              Kentucky
+            </option>
+            <option>
+              Louisiana
+            </option>
+            <option>
+              Maine
+            </option>
+            <option>
+              Maryland
+            </option>
+            <option>
+              Massachusetts
+            </option>
+            <option>
+              Michigan
+            </option>
+            <option>
+              Minnesota
+            </option>
+            <option>
+              Mississippi
+            </option>
+            <option>
+              Missouri
+            </option>
+            <option>
+              Montana
+            </option>
+            <option>
+              Nebraska
+            </option>
+            <option>
+              Nevada
+            </option>
+            <option>
+              New Hampshire
+            </option>
+            <option>
+              New Jersy
+            </option>
+            <option>
+              New Mexico
+            </option>
+            <option>
+              New York
+            </option>
+            <option>
+              North Carolina
+            </option>
+            <option>
+              North Dakota
+            </option>
+            <option>
+              Ohio
+            </option>
+            <option>
+              Oklahoma
+            </option>
+            <option>
+              Oregon
+            </option>
+            <option>
+              Pennsylvania
+            </option>
+            <option>
+              Rhode Island
+            </option>
+            <option>
+              South Carolina
+            </option>
+            <option>
+              South Dakota
+            </option>
+            <option>
+              Tennessee
+            </option>
+            <option>
+              Texas
+            </option>
+            <option>
+              Utah
+            </option>
+            <option>
+              Vermont
+            </option>
+            <option>
+              Virginia
+            </option>
+            <option>
+              Washington
+            </option>
+            <option>
+              West Verginia
+            </option>
+            <option>
+              Wisconsin
+            </option>
+            <option>
+              Wyoming
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset half last'>
+        <label>
+          Previous State Registration Number
+        </label>
+        <input type='text' placeholder='ex. 998-382-09921'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Primary Operation
+        </label>
+        <div class='selectContainer' id='primaryOperation'>
+          <select ng-click="activate('primaryOperation')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Charter fishing
+            </option>
+            <option>
+              Commercial Fishing
+            </option>
+            <option>
+              Commercial passenger carrying
+            </option>
+            <option>
+              Other Commercial Operation
+            </option>
+            <option>
+              Dealer/ Manufacturing Demonstrating
+            </option>
+            <option>
+              Enforcement
+            </option>
+            <option>
+              Government
+            </option>
+            <option>
+              Pleasure
+            </option>
+            <option>
+              Livery
+            </option>
+            <option>
+              Other
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Primary State of Operation
+        </label>
+        <div class='selectContainer' id='stateoperation'>
+          <select ng-click="activate('stateoperation')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Alabama
+            </option>
+            <option>
+              Alaska
+            </option>
+            <option>
+              Arizona
+            </option>
+            <option>
+              Arkansas
+            </option>
+            <option>
+              California
+            </option>
+            <option>
+              Colorado
+            </option>
+            <option>
+              Colorado
+            </option>
+            <option>
+              Connecticut
+            </option>
+            <option>
+              Delaware
+            </option>
+            <option>
+              Florida
+            </option>
+            <option>
+              Georgia
+            </option>
+            <option>
+              Hawaii
+            </option>
+            <option>
+              Idaho
+            </option>
+            <option>
+              Illinois
+            </option>
+            <option>
+              Indiana
+            </option>
+            <option>
+              Iowa
+            </option>
+            <option>
+              Kansas
+            </option>
+            <option>
+              Kentucky
+            </option>
+            <option>
+              Louisiana
+            </option>
+            <option>
+              Maine
+            </option>
+            <option>
+              Maryland
+            </option>
+            <option>
+              Massachusetts
+            </option>
+            <option>
+              Michigan
+            </option>
+            <option>
+              Minnesota
+            </option>
+            <option>
+              Mississippi
+            </option>
+            <option>
+              Missouri
+            </option>
+            <option>
+              Montana
+            </option>
+            <option>
+              Nebraska
+            </option>
+            <option>
+              Nevada
+            </option>
+            <option>
+              New Hampshire
+            </option>
+            <option>
+              New Jersy
+            </option>
+            <option>
+              New Mexico
+            </option>
+            <option>
+              New York
+            </option>
+            <option>
+              North Carolina
+            </option>
+            <option>
+              North Dakota
+            </option>
+            <option>
+              Ohio
+            </option>
+            <option>
+              Oklahoma
+            </option>
+            <option>
+              Oregon
+            </option>
+            <option>
+              Pennsylvania
+            </option>
+            <option>
+              Rhode Island
+            </option>
+            <option>
+              South Carolina
+            </option>
+            <option>
+              South Dakota
+            </option>
+            <option>
+              Tennessee
+            </option>
+            <option>
+              Texas
+            </option>
+            <option>
+              Utah
+            </option>
+            <option>
+              Vermont
+            </option>
+            <option>
+              Virginia
+            </option>
+            <option>
+              Washington
+            </option>
+            <option>
+              West Verginia
+            </option>
+            <option>
+              Wisconsin
+            </option>
+            <option>
+              Wyoming
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Manufacturer
+        </label>
+        <input type='text' placeholder='ex. Marine Manufacturing Company'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Manufacturer Year
+        </label>
+        <input type='text' placeholder='ex. 2012'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Type of Boat
+        </label>
+        <div class='selectContainer' id='typeofboat'>
+          <select ng-click="activate('typeofboat')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Air Boat
+            </option>
+            <option>
+              Auxiliary Sail
+            </option>
+            <option>
+              Cabin Motorboat
+            </option>
+            <option>
+              Houseboat
+            </option>
+            <option>
+              Inflatable Boat
+            </option>
+            <option>
+              Open Motorboat
+            </option>
+            <option>
+              Paddleboat
+            </option>
+            <option>
+              PWC
+            </option>
+            <option>
+              Pontoon Boat
+            </option>
+            <option>
+              Sail Only
+            </option>
+            <option>
+              Other
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Hull Material
+        </label>
+        <div class='selectContainer' id='material'>
+          <select ng-click="activate('material')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Aluminum
+            </option>
+            <option>
+              Fiberglass
+            </option>
+            <option>
+              Plastic
+            </option>
+            <option>
+              Rubber/Vinyl/Canvas
+            </option>
+            <option>
+              Steel
+            </option>
+            <option>
+              Wood
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Primary Color
+        </label>
+        <input type='text' placeholder='ex. red"'>
+      </div>
+      <div class='fieldset half last'>
+        <label>
+          Secondary Color
+        </label>
+        <input type='text' placeholder='ex. white"'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Length of Vessel
+        </label>
+        <input type='text' placeholder='ex. 14&#39; 6"'>
+      </div>
+      <div class='fieldset half last'>
+        <label>
+          City or Town of Mooring/Storage
+        </label>
+        <input type='text' placeholder='ex. Newbury'>
+      </div>
+      <div class='fieldset first half'>
+        <label>
+          Pollution Control Device
+        </label>
+        <div class='selectContainer' id='polution'>
+          <select ng-click="activate('polution')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              Chlorinator
+            </option>
+            <option>
+              Holding Tank
+            </option>
+            <option>
+              Porta Potti
+            </option>
+            <option>
+              Other
+            </option>
+            <option>
+              None
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='fieldset half last'>
+        <label>
+          Number of Engines
+        </label>
+        <div class='selectContainer' id='engine'>
+          <select class='watchSelect' ng-click="activate('engine')">
+            <option>
+              Please Choose
+            </option>
+            <option>
+              0
+            </option>
+            <option>
+              1
+            </option>
+            <option>
+              2
+            </option>
+            <option>
+              3
+            </option>
+            <option>
+              4
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class='engines'>
+        <h3>
+          Engine 1
+        </h3>
+        <div class='fieldset first half'>
+          <label>
+            Manufacturer
+          </label>
+          <input type='text' placeholder='ex. Mercury Marine Engines'>
+        </div>
+        <div class='fieldset half last'>
+          <label>
+            Year
+          </label>
+          <input type='text' placeholder='ex. 2012'>
+        </div>
+        <div class='fieldset first half'>
+          <label>
+            Serial Number
+          </label>
+          <input type='text' placeholder='ex. 282-9938-847764'>
+        </div>
+        <div class='fieldset half last'>
+          <label>
+            Horse Power
+          </label>
+          <input type='text' placeholder='ex. 650'>
+        </div>
+        <div class='fieldset first half'>
+          <label>
+            Propulsion
+          </label>
+          <div class='selectContainer' id='propulsion'>
+            <select class='watchSelect' ng-click="activate('propulsion')">
+              <option>
+                Please Choose
+              </option>
+              <option>
+                Air Thrust
+              </option>
+              <option>
+                Manual
+              </option>
+              <option>
+                Propeller
+              </option>
+              <option>
+                Sail
+              </option>
+              <option>
+                Water Jet
+              </option>
+              <option>
+                Other
+              </option>
+              <option>
+                None
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class='fieldset half last'>
+          <label>
+            Drive Type
+          </label>
+          <div class='selectContainer' id='drive'>
+            <select class='watchSelect' ng-click="activate('drive')">
+              <option>
+                Please Choose
+              </option>
+              <option>
+                Inboard
+              </option>
+              <option>
+                Outboard
+              </option>
+              <option>
+                Pod-Drive
+              </option>
+              <option>
+                Sail
+              </option>
+              <option>
+                Stern Drive
+              </option>
+              <option>
+                Other
+              </option>
+              <option>
+                None
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Comments
+        </label>
+        <textarea type='textbox' placeholder='enter your comments, if any'></textarea>
+      </div>
+      <a class='lightBlue' href='/owners'>
+        Next
+      </a>
+    </div>
+  </div>
+  <div class='rightSide'>
+    <div class='active activity'>
+      <div class='title'>
+        <a href='/boatregistration'>
+          <i class='fa fa-arrow-circle-o-left'></i>
+          Boat Details
+        </a>
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        <a href='/owners'>
+          Registrant Information
+        </a>
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        <a href='/documents'>
+          Documents
+        </a>
+      </div>
+    </div>
+    <div class='activity'>
+      <div class='title'>
+        <a href='/fee'>
+          Fees and Payments
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

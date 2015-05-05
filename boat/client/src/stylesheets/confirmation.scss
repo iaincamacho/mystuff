@@ -1,0 +1,40 @@
+.lasttask {
+  position:relative;
+  float:left;
+  margin:20px 0 0 0;
+  padding:10px 10px 10px 10px;
+  width:45%;
+  margin-right:5%;
+  border:1px solid $lightBlue;
+  box-sizing:border-box;
+  border-radius:5px;
+  text-align:center;
+  line-height:1em;
+  vertical-align: middle;
+
+  i {
+    position:relative;
+    float:left;
+    margin:0 10px 0 40px;
+    font-size:2em;
+  }
+  span {
+    position:relative;
+    float:left;
+    margin-top:8px;
+    padding:0;
+  }
+
+}
+ul.related {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style:none;
+
+  li {
+    padding:10px 0;
+  }
+}

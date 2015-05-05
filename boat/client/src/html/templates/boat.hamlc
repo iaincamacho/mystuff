@@ -1,0 +1,484 @@
+.container.boat
+  .header
+    %h1
+      Boat Registration
+    .rightSection
+      %a.unit
+        %img.clock{src: '/assets/back.jpg'}
+        .text
+          Return to
+          %br
+          Christopher R.
+  .leftSide
+    %h3
+      Boat Details
+    .search.dashboard
+      .fieldset
+        %input#quickSearch#hin{type: 'text', placeholder: 'Quick Search by HIN ', val: ''}
+        %a.searchIcon{ng-click: 'showNoResult()', style: 'top:8px;'}
+          %i.fa.fa-search
+        %a.advanced
+          Advanced Search
+      .noResult
+        No Results Found - Please Add a New Record
+    .advancedsearch
+      .fieldset
+        %label
+          Hull Identification Number
+        %input{type: 'text', placeholder: 'ex. 12 - 1123 - 45 - A36 -532', ng-model: 'boat.hin'}
+      .fieldset.half.first
+        %label
+          Effective Date
+        %input{type: 'text', placeholder: 'ex. 2012', value: "{{date | date:'MM-dd-yyyy'}}"}
+      .fieldset.half.first
+        %label
+          Previously Registered
+        .selectContainer#registeredbefore
+          %select{ng-click: "activate('registeredbefore')"}
+            %option
+              Please Choose
+            %option
+              Yes
+            %option
+              No
+      .fieldset.half.first
+        %label
+          Previous State
+        .selectContainer#state
+          %select{ng-click: "activate('state')"}
+            %option
+              Please Choose
+            %option
+              Alabama
+            %option
+              Alaska
+            %option
+              Arizona
+            %option
+              Arkansas
+            %option
+              California
+            %option
+              Colorado
+            %option
+              Colorado
+            %option
+              Connecticut
+            %option
+              Delaware
+            %option
+              Florida
+            %option
+              Georgia
+            %option
+              Hawaii
+            %option
+              Idaho
+            %option
+              Illinois
+            %option
+              Indiana
+            %option
+              Iowa
+            %option
+              Kansas
+            %option
+              Kentucky
+            %option
+              Louisiana
+            %option
+              Maine
+            %option
+              Maryland
+            %option
+              Massachusetts
+            %option
+              Michigan
+            %option
+              Minnesota
+            %option
+              Mississippi
+            %option
+              Missouri
+            %option
+              Montana
+            %option
+              Nebraska
+            %option
+              Nevada
+            %option
+              New Hampshire
+            %option
+              New Jersy
+            %option
+              New Mexico
+            %option
+              New York
+            %option
+              North Carolina
+            %option
+              North Dakota
+            %option
+              Ohio
+            %option
+              Oklahoma
+            %option
+              Oregon
+            %option
+              Pennsylvania
+            %option
+              Rhode Island
+            %option
+              South Carolina
+            %option
+              South Dakota
+            %option
+              Tennessee
+            %option
+              Texas
+            %option
+              Utah
+            %option
+              Vermont
+            %option
+              Virginia
+            %option
+              Washington
+            %option
+              West Verginia
+            %option
+              Wisconsin
+            %option
+              Wyoming
+      .fieldset.half.last
+        %label
+          Previous State Registration Number
+        %input{type: 'text', placeholder: 'ex. 998-382-09921'}
+      .fieldset.half.first
+        %label
+          Primary Operation
+        .selectContainer#primaryOperation
+          %select{ng-click: "activate('primaryOperation')"}
+            %option
+              Please Choose
+            %option
+              Charter fishing
+            %option
+              Commercial Fishing
+            %option
+              Commercial passenger carrying
+            %option
+              Other Commercial Operation
+            %option
+              Dealer/ Manufacturing Demonstrating
+            %option
+              Enforcement
+            %option
+              Government
+            %option
+              Pleasure
+            %option
+              Livery
+            %option
+              Other
+      .fieldset.half.first
+        %label
+          Primary State of Operation
+        .selectContainer#stateoperation
+          %select{ng-click: "activate('stateoperation')"}
+            %option
+              Please Choose
+            %option
+              Alabama
+            %option
+              Alaska
+            %option
+              Arizona
+            %option
+              Arkansas
+            %option
+              California
+            %option
+              Colorado
+            %option
+              Colorado
+            %option
+              Connecticut
+            %option
+              Delaware
+            %option
+              Florida
+            %option
+              Georgia
+            %option
+              Hawaii
+            %option
+              Idaho
+            %option
+              Illinois
+            %option
+              Indiana
+            %option
+              Iowa
+            %option
+              Kansas
+            %option
+              Kentucky
+            %option
+              Louisiana
+            %option
+              Maine
+            %option
+              Maryland
+            %option
+              Massachusetts
+            %option
+              Michigan
+            %option
+              Minnesota
+            %option
+              Mississippi
+            %option
+              Missouri
+            %option
+              Montana
+            %option
+              Nebraska
+            %option
+              Nevada
+            %option
+              New Hampshire
+            %option
+              New Jersy
+            %option
+              New Mexico
+            %option
+              New York
+            %option
+              North Carolina
+            %option
+              North Dakota
+            %option
+              Ohio
+            %option
+              Oklahoma
+            %option
+              Oregon
+            %option
+              Pennsylvania
+            %option
+              Rhode Island
+            %option
+              South Carolina
+            %option
+              South Dakota
+            %option
+              Tennessee
+            %option
+              Texas
+            %option
+              Utah
+            %option
+              Vermont
+            %option
+              Virginia
+            %option
+              Washington
+            %option
+              West Verginia
+            %option
+              Wisconsin
+            %option
+              Wyoming
+      .fieldset.half.first
+        %label
+          Manufacturer
+        %input{type: 'text', placeholder: 'ex. Marine Manufacturing Company'}
+      .fieldset.half.first
+        %label
+          Manufacturer Year
+        %input{type: 'text', placeholder: 'ex. 2012'}
+      .fieldset.half.first
+        %label
+          Type of Boat
+        .selectContainer#typeofboat
+          %select{ng-click: "activate('typeofboat')"}
+            %option
+              Please Choose
+            %option
+              Air Boat
+            %option
+              Auxiliary Sail
+            %option
+              Cabin Motorboat
+            %option
+              Houseboat
+            %option
+              Inflatable Boat
+            %option
+              Open Motorboat
+            %option
+              Paddleboat
+            %option
+              PWC
+            %option
+              Pontoon Boat
+            %option
+              Sail Only
+            %option
+              Other
+      .fieldset.half.first
+        %label
+          Hull Material
+        .selectContainer#material
+          %select{ng-click: "activate('material')"}
+            %option
+              Please Choose
+            %option
+              Aluminum
+            %option
+              Fiberglass
+            %option
+              Plastic
+            %option
+              Rubber/Vinyl/Canvas
+            %option
+              Steel
+            %option
+              Wood
+      .fieldset.half.first
+        %label
+          Primary Color
+        %input{type: 'text', placeholder: 'ex. red"'}
+      .fieldset.half.last
+        %label
+          Secondary Color
+        %input{type: 'text', placeholder: 'ex. white"'}
+      .fieldset.half.first
+        %label
+          Length of Vessel
+        %input{type: 'text', placeholder: 'ex. 14\' 6"'}
+      .fieldset.half.last
+        %label
+          City or Town of Mooring/Storage
+        %input{type: 'text', placeholder: 'ex. Newbury'}
+      .fieldset.half.first
+        %label
+          Pollution Control Device
+        .selectContainer#polution
+          %select{ng-click: "activate('polution')"}
+            %option
+              Please Choose
+            %option
+              Chlorinator
+            %option
+              Holding Tank
+            %option
+              Porta Potti
+            %option
+              Other
+            %option
+              None
+      .fieldset.half.last
+        %label
+          Number of Engines
+        .selectContainer#engine
+          %select.watchSelect{ng-click: "activate('engine')"}
+            %option
+              Please Choose
+            %option
+              0
+            %option
+              1
+            %option
+              2
+            %option
+              3
+            %option
+              4
+      .engines
+        %h3
+          Engine 1
+        .fieldset.half.first
+          %label
+            Manufacturer
+          %input{type: 'text', placeholder: 'ex. Mercury Marine Engines'}
+        .fieldset.half.last
+          %label
+            Year
+          %input{type: 'text', placeholder: 'ex. 2012'}
+        .fieldset.half.first
+          %label
+            Serial Number
+          %input{type: 'text', placeholder: 'ex. 282-9938-847764'}
+        .fieldset.half.last
+          %label
+            Horse Power
+          %input{type: 'text', placeholder: 'ex. 650'}
+        .fieldset.half.first
+          %label
+            Propulsion
+          .selectContainer#propulsion
+            %select.watchSelect{ng-click: "activate('propulsion')"}
+              %option
+                Please Choose
+              %option
+                Air Thrust
+              %option
+                Manual
+              %option
+                Propeller
+              %option
+                Sail
+              %option
+                Water Jet
+              %option
+                Other
+              %option
+                None
+        .fieldset.half.last
+          %label
+            Drive Type
+          .selectContainer#drive
+            %select.watchSelect{ng-click: "activate('drive')"}
+              %option
+                Please Choose
+              %option
+                Inboard
+              %option
+                Outboard
+              %option
+                Pod-Drive
+              %option
+                Sail
+              %option
+                Stern Drive
+              %option
+                Other
+              %option
+                None
+      .fieldset
+        %label
+          Comments
+        %textarea{type: 'textbox', placeholder: 'enter your comments, if any'}
+
+      %a.lightBlue{href: '/owners'}
+        Next
+  .rightSide
+    .activity.active
+      .title
+        %a{href: '/boatregistration'}
+          %i.fa.fa-arrow-circle-o-left
+          Boat Details
+    .activity
+      .title
+        %a{href: '/owners'}
+          Registrant Information
+    .activity
+      .title
+        %a{href: '/documents'}
+          Documents
+    .activity
+      .title
+        %a{href: '/fee'}
+          Fees and Payments

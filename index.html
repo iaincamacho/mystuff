@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='resources/css/style.css' rel='stylesheet' type='text/css'>
+    <link href='resources/css/icheck/blue.css' rel='stylesheet' type='text/css'>
+    <link href='resources/css/progress.css' rel='stylesheet' type='text/css'>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <!-- THE MAGIC -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js'></script>
+    <script src='resources/js/progress.js'></script>
+    <script src='resources/js/icheck.js'></script>
+    <script src='resources/js/script.js'></script>
+    <!--[if lt IE 8]> <style type="text/css">..header .main .search .input {filter: none;}</style> <![endif]-->
+    <script src='//use.typekit.net/bwv1isg.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='super'>
+        <div class='container'>
+          <div class='quarter'>
+            <a alt='Go back to hipsum.co/' href='http://hipsum.co/'>
+              Back to hipsum.co
+            </a>
+          </div>
+          <div class='half center'>
+            Welcome to the City of Lorem's Citizen Portal
+            <a class='circle'>
+              ?
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='main'>
+        <div class='container'>
+          <div class='quarter logo'>
+            <a alt='Go back to the Oakland Site' class='no-opacity' href='http://www2.oaklandnet.com/'>
+              <img class='image-responsive' src='resources/images/logo.png' title='City of Oakland'>
+            </a>
+          </div>
+          <div class='half'>
+            <form action='http://www.google.com' class='search' method='get'>
+              <input id='searchbox' maxlength='120' name='q' type='text' value='Search...'>
+              <input class='submit' type='submit' value=''>
+            </form>
+          </div>
+          <div class='quarter'>
+            <div class='user'>
+              <span>
+                ID
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='sub'>
+        <div class='container'>
+          <ul class='alert'>
+            <li class='anouncements active'>
+              <a onclick='showalert(this); return false'>
+                Announcements
+              </a>
+              <ul>
+                <img class='pointer' src='resources/images/pointer.png'>
+                <li>
+                  <a>
+                    City is Being Attacked...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Mayor plans flowers...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Mayor Builds Garden...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Clean up day in City...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    New park for kids...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Jeff becomes mayor...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    City becomes a city...
+                  </a>
+                </li>
+                <li>
+                  <a class='viewmore'>
+                    View more...
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='alerts active'>
+              <a onclick='showalert(this); return false'>
+                Alerts
+              </a>
+              <ul>
+                <img class='pointer' src='resources/images/pointer.png'>
+                <li>
+                  <a>
+                    City is Being Attacked...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Mayor plans flowers...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Mayor Builds Garden...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Clean up day in City...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    New park for kids...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Jeff becomes mayor...
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    City becomes a city...
+                  </a>
+                </li>
+                <li>
+                  <a class='viewmore'>
+                    View more...
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='signout'>
+              <a>
+                Sign Out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='col-sm-12' id='title'>
+        <h3>
+          Welcome to Citizen Access Wizard
+        </h3>
+        <div class='subheader col-sm-12 center'>
+          <a class='save' onclick='NProgress.start(); NProgress.done();'>
+            Save
+          </a>
+          <a class='save'>
+            Exit
+          </a>
+        </div>
+      </div>
+      <div class='col-sm-6 col-sm-offset-3 wizard'>
+        <div class='toolbar'>
+          <div class='subheader'>
+            <div class='col-sm-12' id='subtitle'>
+              <a id='prevsect'>
+                <i class='fa fa-arrow-circle-left'></i>
+              </a>
+              <span class='text'>
+                1. Personal Information
+              </span>
+              <a id='nextsect'>
+                <i class='fa fa-arrow-circle-right'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='section' id='intro'>
+          <form class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              What do you want to do today?
+            </h4>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer'>
+                I want to erect a sign for my business
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer2' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer2'>
+                I want to change the land use on my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer5' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer5'>
+                I want to repair my roof
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer3' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer3'>
+                I want to subdivide my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer4' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer4'>
+                I want to make changes to my electrical system
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer4' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer4'>
+                I want to build on my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer22' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer22'>
+                I want to build on my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer22' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer222'>
+                I want to change the land use on my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer225' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer522'>
+                I want to repair my roof
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer322' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer322'>
+                I want to subdivide my property
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer422' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer422'>
+                I want to make changes to my electrical system
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='introanswer422' name='What would you like to do?' type='radio' value='yes'>
+              <label for='introanswer422'>
+                I want to build on my property
+              </label>
+            </div>
+            <div class='confirm'>
+              <a class='btn btn-primary disabled continue'>
+                Next
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class='section hideSection' id='signsection1'>
+          <form class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              Where is the subject property?
+            </h4>
+            <div class='fieldset'>
+              <input class='form-contro' placeholder='ex. 1355 Market Street, San Francisco CA 94203'>
+              <div class='confirm'>
+                <a class='back'>
+                  <i class='fa fa-arrow-left'></i>
+                  Back
+                </a>
+                <a class='btn btn-primary disabled continue'>
+                  Next
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class='section hideSection' id='signsection2'>
+          <form class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              Are you the owner of the property?
+            </h4>
+            <div class='fieldset'>
+              <input class='slick' id='section1answer' name='Do you own?' type='radio' value='yes'>
+              <label for='section1answer'>
+                yes
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='section1answer2' name='Do you own?' type='radio' value='yes'>
+              <label for='section1answer2'>
+                no
+              </label>
+            </div>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam an?
+              <em>
+                (optional)
+              </em>
+            </h4>
+            <div class='fieldset'>
+              <input class='slick' id='section1answer3' name='Do you won it?2' type='radio' value='yes'>
+              <label for='section1answer3'>
+                yes
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='section1answer4' name='Do you won it?2' type='radio' value='yes'>
+              <label for='section1answer4'>
+                no
+              </label>
+              <div class='confirm'>
+                <a class='back'>
+                  <i class='fa fa-arrow-left'></i>
+                  Back
+                </a>
+                <a class='btn btn-primary disabled continue'>
+                  Next
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class='section hideSection' id='signsection3'>
+          <form class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              Is there an exsisting sign?
+            </h4>
+            <div class='fieldset'>
+              <input class='slick' id='section2answer' name='Exsisting Sign ?' type='radio' value='yes'>
+              <label for='section2answer'>
+                yes
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='section2answer2' name='Exsisting Sign ?' type='radio' value='no'>
+              <label for='section2answer2'>
+                no
+              </label>
+            </div>
+            <div class='hideSection' id='section3showme'>
+              <h4>
+                What are you doing to the exsisting sign?
+              </h4>
+              <div class='fieldset'>
+                <input class='slick' id='section2answer' name='Exsisting Sign' type='checkbox' value='removing'>
+                <label for='section2answer'>
+                  Removing
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section2answer2' name='Exsisting Sign' type='checkbox' value='altering'>
+                <label for='section2answer2'>
+                  Repairing / Altering
+                </label>
+              </div>
+            </div>
+            <div class='confirm'>
+              <a class='back'>
+                <i class='fa fa-arrow-left'></i>
+                Back
+              </a>
+              <a class='btn btn-primary disabled continue'>
+                Next
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class='section hideSection' id='signsection4'>
+          <form class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              Is it a permanent or temporary sign?
+            </h4>
+            <div class='fieldset'>
+              <input class='slick' id='section3answer' name='Temp or Perm?' type='radio' value='prm'>
+              <label for='section3answer'>
+                Permanent
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='section3answer2' name='Temp or Perm?' type='radio' value='temp'>
+              <label for='section3answer2'>
+                Temporary
+              </label>
+            </div>
+            <div class='fieldset'>
+              <input class='slick' id='section3answer3' name='Temp or Perm?' type='radio' value='idk'>
+              <label for='section3answer3'>
+                I Don't Know
+              </label>
+            </div>
+            <div class='largenumber hideSection' id='section4showme'>
+              <h4>
+                What kind of sign is it?
+              </h4>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer' name='Exsisting Sign' type='radio' value='removing'>
+                <label for='section3answer'>
+                  Banner
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer2' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer2'>
+                  Window
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='3' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='3'>
+                  Freestanding
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer4' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer4'>
+                  Attached Roof
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer5' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer5'>
+                  Attached Canopy
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='4' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='4'>
+                  Attached Wall
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer11' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer11'>
+                  Freestanding Monument
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer8' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer8'>
+                  Attached Canopy
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3Answer9' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3Answer9'>
+                  Attached Wall
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer10' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer10'>
+                  Freestanding Monument
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3answer12' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3answer12'>
+                  Freestanding pylon
+                </label>
+              </div>
+              <div class='fieldset'>
+                <input class='slick' id='section3Answer7' name='Exsisting Sign' type='radio' value='altering'>
+                <label for='section3Answer7'>
+                  Freestanding pylon Lorem Ipsum
+                </label>
+              </div>
+            </div>
+            <div class='confirm'>
+              <a class='back'>
+                <i class='fa fa-arrow-left'></i>
+                Back
+              </a>
+              <a class='btn btn-primary disabled continue'>
+                Next
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class='section hideSection' id='summary'>
+          <div class='col-sm-10 col-sm-offset-1'>
+            <div class='small'>
+              Please review your given information.  You can click on any question to edit the answer.
+            </div>
+            <h4>
+              1. Personal Information
+            </h4>
+            <a>
+              Where is the subject property?
+              <span>
+                Yes
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <a>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam an? <em>(optional)</em>
+              <span>
+                N/A
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <h4>
+              2. Sign Information
+            </h4>
+            <a>
+              Is there an exsisting sign?
+              <span>
+                Yes
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <a>
+              What are you doing to the exsisting sign?
+              <span>
+                Repairing, Altering
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <a>
+              Is it a permanent or temporary sign?
+              <span>
+                Permanent
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <a>
+              What kind of sign is it?
+              <span>
+                Banner
+              </span>
+              <span class='edit'>
+                <i class='fa fa-pencil-square-o'></i>
+                Edit
+              </span>
+            </a>
+            <div class='confirm'>
+              <a class='btn btn-primary continue'>
+                Submit & Pay
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='section hideSection' id='error'>
+          <div class='col-sm-10 col-sm-offset-1'>
+            <h4>
+              Error Message Lorem Ipsum Dolor sit Amet.
+            </h4>
+            <p>
+              Reason: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet rutrum metus a mattis. Donec sagittis, tellus vel mollis consectetur
+            </p>
+            <div class='confirm'>
+              <a class='back'>
+                <i class='fa fa-arrow-left'></i>
+                Back
+              </a>
+              <a class='btn btn-primary continue'>
+                Finish
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-2 licence'>
+        <div class='first'>
+          As you go through this process, you will apply for one or more permits related to your project.
+        </div>
+        <div class='second'>
+          Required Permits:
+          <ul>
+            <li>
+              Permit 1
+            </li>
+            <li>
+              Permit 2
+            </li>
+          </ul>
+        </div>
+        <div class='third'>
+          Required Permits:
+          <ul>
+            <li>
+              Permit 1 <span class="right">$24.<sup>99</sup></span>
+            </li>
+            <li>
+              Permit 3 <span class="right">$12.<sup>50</sup></span>
+            </li>
+            <li>
+              Permit 3 <span class="right">$10.<sup>00</sup></span>
+            </li>
+            <li class='total'>
+              Total Fees <span class="right">$10.<sup>00</sup></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

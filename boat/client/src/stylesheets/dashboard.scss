@@ -1,0 +1,201 @@
+.header{
+  position:relative;
+  float:left;
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  border-bottom:1px solid $lightGrey;
+
+  h1 {
+    position:relative;
+    float:left;
+    font-weight:500;
+    margin-top:30px;
+    line-height:1em;
+    margin-bottom:0;
+
+    span {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+      font-size:.5em;
+    }
+  }
+  .rightSection {
+    position:relative;
+    float:right;
+    margin:0;
+    padding:0;
+
+    .unit {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0 20px 0 20px;
+      border-left:1px solid $lightGrey;
+
+      img {
+        position:relative;
+        float:left;
+        margin:0;
+        padding:0;
+        width:75px;
+        height:75px;
+      }
+      .text {
+        position:relative;
+        float:left;
+        margin:15px 0 10px 20px;
+        padding:0;
+        line-height:1.5em;
+      }
+    }
+  }
+}
+.leftSide {
+  position:relative;
+  float:left;
+  margin:20px 0 0 00;
+  padding:0 30px 0 0;
+  width:640px;
+  box-sizing:border-box;
+
+  .search .fieldset {
+    margin-top:0;
+  }
+
+  h3 {
+    margin-top:30px;
+  }
+}
+.rightSide {
+  position:relative;
+  float:left;
+  margin:50px 0 0 00;
+  padding:0 0 0 30px;
+  border-left:1px solid $lightGrey;
+  width:300px;
+  box-sizing:border-box;
+
+  .title {
+    line-height:1.25em;
+  }
+  p {
+    font-size:.75em;
+  }
+  .timeStamp, .status {
+    position:relative;
+    float:left;
+    margin:0 20px 0 0;
+    padding:0;
+    font-weight:300;
+    font-size:.6em;
+    color:$darkGrey;
+
+    i {
+      margin-right:3px;
+    }
+  }
+  .activity {
+    position:relative;
+    float:left;
+    width:100%;
+    padding:5px;
+    margin-bottom:10px;
+    border-bottom:1px dotted $lightGrey;
+    border-radius:5px;
+
+    &.active {
+      margin-left:-22px;
+      border-bottom:none;
+      i {
+        margin-right:6px;
+      }
+      a {
+        font-weight:500;
+      }
+    }
+  }
+}
+
+
+
+.task {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0 0 20px 0;
+  width:100%;
+  border-bottom: 1px dotted $lightGrey;
+
+  img {
+    position:relative;
+    float:left;
+    margin:10px 5% 0 0;
+    width:15%;
+  }
+  .right {
+    position:relative;
+    float:left;
+    width:80%;
+    margin-top:10px;
+  }
+  p {
+    position:relative;
+    float:left;
+    margin:20px 0;
+    padding:0;
+    width:65%;
+    font-size:.7em;
+
+    strong {
+      font-weight:400;
+    }
+  }
+
+  &.searchResult {
+    margin-top:0;
+    padding:0;
+    margin:0;
+    border:none;
+    h4 {
+      margin-top:0;
+      padding:15px 10px;
+      border-radius:5px;
+      box-sizing:border-box;
+      border:1px solid $white;
+      border-bottom:1px solid $lightGrey;
+
+
+      i {
+        float:right;
+      }
+      &:hover {
+        background:$lightGrey;
+      }
+    }
+  }
+}
+
+#qsselect {
+  position:absolute;
+  top:28px;
+  left:10px;
+  background:transparent;
+
+  select {
+    border:none;
+    border-right:1px solid $lightGrey;
+    background:transparent;
+  }
+
+}
+
+#quickSearch {
+  padding-left:135px;
+  &#hin {
+    padding-left:10px;
+  }
+}

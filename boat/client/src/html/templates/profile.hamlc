@@ -1,0 +1,246 @@
+.container
+  .header
+    %h1
+      Christopher Russell
+      %span.superheader
+        Profile Of
+    .rightSection
+      .unit
+        %img.weather{src: '/assets/boaticon.jpg'}
+        .text
+          5 Registered Boats
+          %br
+          2 Registered OHV
+      .unit
+        %img.clock{src: '/assets/face.jpg'}
+        .text
+          $0 Due in Fees
+          %br
+          No Violations
+  .leftSide
+    %h3
+      Personal Information
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          First Name
+        %p
+          Christpher
+      .fieldset.half.last.inputless
+        %label
+          Middle Initial
+        %p
+          P
+    .fieldset.half.last.inputless
+      .fieldset.half.first.inputless
+        %label
+          Last Name
+        %p
+          Russell
+      .fieldset.half.last.inputless
+        %label
+          Suffix
+        %p
+
+    .fieldset.half.first.inputless
+      %label
+        Social Security Number
+      %p
+        XXX-XX-XXXX
+        %a
+          %i.fa.fa-eye-slash
+    .fieldset.half.last.inputless
+      %label
+        Customer ID Number
+      %p
+        P-5284840-599403-0293 A
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          Home Phone
+        %p
+          617-490-2998
+      .fieldset.half.first.inputless
+        %label
+          Cell Phone
+        %p
+          617-998-1234
+    .fieldset.half.last.inputless
+      .fieldset.half.first.inputless
+        %label
+          Date of Birth
+        %p
+          October 13, 1974
+      .fieldset.half.last.inputless{style: 'width:30%;margin-left:15%;'}
+        %label
+          Gender
+        %p
+          Male
+    .fieldset.full.inputless
+      %label
+        Email Address
+      %p
+        christopher.patrick.russell@domain.com
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          US Citizenship
+        %p
+          Yes
+      .fieldset.half.last.inputless
+        %label
+          US Residency
+        %p
+          Yes
+    .fieldset.half.last.inputless
+      %label
+        Massachussets Resident
+      %p
+        Yes
+    %h3
+      Home Address
+    .fieldset.half.first.inputless
+      %label
+        Street Address
+      %p
+        1928-B Massachusetts Avenue
+    .fieldset.half.Last.inputless
+      %label
+        Unit/Apartment Number
+      %p
+        Apartment 2
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          City
+        %p
+          Boston
+      .fieldset.half.first.inputless
+        %label
+          State
+        %p
+          MA
+    .fieldset.half.last.inputless
+      .fieldset.half.first.inputless
+        %label
+          Zip Code
+        %p
+          02115
+      .fieldset.half.last.inputless
+        %label
+          Country
+        %p
+          USA
+    %h3
+      Mailing Address
+    .fieldset.half.first.inputless
+      %label
+        Street Address
+      %p
+        P. O. Box 5623
+    .fieldset.half.Last.inputless
+      %label
+        Unit/Apartment Number
+      %p
+        &nbsp;
+    .fieldset.half.first.inputless
+      .fieldset.half.first.inputless
+        %label
+          City
+        %p
+          Boston
+      .fieldset.half.first.inputless
+        %label
+          State
+        %p
+          MA
+    .fieldset.half.last.inputless
+      .fieldset.half.first.inputless
+        %label
+          Zip Code
+        %p
+          02113
+      .fieldset.half.last.inputless
+        %label
+          Country
+        %p
+          USA
+
+    %h3
+      Current Registrations (5)
+    .sticker
+      .number
+        584770982
+      .expiration
+        10-14
+      .detail
+        MA Registered Watercraft
+      %img.barcode{src: '/assets/barcode1.jpg'}
+    .sticker
+      .number
+        672963417
+      .expiration
+        01-15
+      .detail
+        MA Registered Watercraft
+      %img.barcode{src: '/assets/barcode2.jpg'}
+    .sticker{style: 'margin-right:0;'}
+      .number
+        352311512
+      .expiration
+        12-16
+      .detail
+        MA Registered Watercraft
+      %img.barcode{src: '/assets/barcode1.jpg'}
+    %a.moreSticker
+      More
+    %h3
+      Owned Boats (5)
+    .sticker
+      %img.boat{src: '/assets/boaticon.jpg'}
+      .title
+        5782038-488
+    .sticker
+      %img.boat{src: '/assets/powerboat.jpg'}
+      .title
+        8490398-138
+    .sticker{style: 'margin-right:0;'}
+      %img.boat{src: '/assets/boaticon.jpg'}
+      .title
+        8490398-138
+    %a.moreSticker
+      More
+    .fieldset
+  .rightSide
+    %h3
+      Actions
+    .activity
+      .title
+        %a{ng-click: 'showregtypes()'}
+          Create a New Registration
+          %ul
+            %li
+              %a{href: '/boatregistration'}
+                New Boat Registration
+            %li
+              %a
+                New ATV Registration
+            %li
+              %a
+                New Snowmobile Registration
+    .activity
+      .title
+        %a
+          Renew a Registration
+    .activity
+      .title
+        %a
+          Transfer a Registration
+    .activity
+      .title
+        %a
+          New Boat Titling
+    .activity
+      .title
+        %a
+          Edit Profile Information

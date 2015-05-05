@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+    <title>rygr</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' href='/assets/favicon.ico' type='image/x-icon'>
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/main.css'>
+  </head>
+  <body>
+    <noscript>
+      <h1>This page requires JavaScript</h1>
+      <p>Please enable JavaScript for your browser and reload</p>
+    </noscript>
+    <script>
+      function loadError(){
+        document.body.innerHTML = '<h1>Something went wrong</h1><p>Necessary resources could not be loaded</p>';
+      };
+    
+      requirejs = {"catchError":{"define":true},"paths":{"ngRoute":"angular-route","ngAnimate":"angular-animate"},"shim":{"ngRoute":{"deps":["angular"],"exports":"angular"},"clockpicker":{"deps":["jquery"],"exports":"clockpicker"},"ngAnimate":{"deps":["angular"],"exports":"angular"},"angular":{"exports":"angular"}},"baseUrl":"/assets"}
+    </script>
+    <script data-main='/assets/main.js' src='/assets/require.js' onerror='loadError()'></script>
+    <script>
+      lr_host = 'http://' + (location.host || 'localhost').split(':')[0]
+      lr_port = 35729
+      document.write('<script src="' + lr_host + ':' + lr_port + '/livereload.js?snipver=1"></' + 'script>')
+    </script>
+  </body>
+</html>

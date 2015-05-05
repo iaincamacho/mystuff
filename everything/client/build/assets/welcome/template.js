@@ -1,0 +1,15 @@
+(function() {
+  define(['hamlcoffee'], function(hc) {
+    return function(context) {
+      var render;
+      render = function() {
+        var $o;
+        $o = [];
+        $o.push("<header>\n  <div class='content'>\n    <img class='logo' src='/assets/rygr.png'>\n    <div class='text'>\n      <h1>Welcome to rygr</h1>\n      <p>A simple, flexible build tool and server utilizing\n        <a href='http://gulpjs.com/' target='_blank'>Gulp,</a>\n        <a href='http://bower.io/' target='_blank'>Bower,</a>\n        and\n        <a href='http://expressjs.com/' target='_blank'>Express</a>\n      </p>\n    </div>\n  </div>\n</header>\n<article>\n  <section>\n    <h2>Getting started</h2>\n    <p>Rygr is a foundational tool that is built to get you writing your web app as fast as possible. It doesn't subscribe to any front end frameworks, and is completely adapatable to your development preferences.</p>\n    <p>\n      Getting started is as easy as running\n      <code>gulp</code>\n      from the command line\n    </p>\n  </section>\n  <section>\n    <h2>Baked in features</h2>\n    <p>Out of the box, Rygr gives you support for a slew of features:</p>\n    <ul>\n      <li>Live reload (without the need for an extension or plugin)</li>\n      <li>Bower packages</li>\n      <li>JavaScript templates (via Haml-Coffee)</li>\n      <li>HAML-Coffee and HTML pages</li>\n      <li>Image optimization</li>\n      <li>Static assets</li>\n      <li>CoffeeScript and JavaScript files</li>\n      <li>SCSS compiling\n        <a href='http://bourbon.io/' target='_blank'>(and the Bourbon framework)</a>\n      </li>\n      <li>RequireJS functionality (including loading in Bower packages)</li>\n      <li>Easy configurations and environmental customization</li>\n      <li>Server backing for push state URLs and asset serving</li>\n    </ul>\n  </section>\n  <section>\n    <h2>Customize it</h2>\n    <p>Because Rygr is built on top of popular 3rd party frameworks, it's easy to customize your project</p>\n    <ul>\n      <li>Change build functionality through\n        <a href='http://gulpjs.com/' target='_blank'>Gulp</a>\n      </li>\n      <li>Manage client dependencies with\n        <a href='http://bower.io/' target='_blank'>Bower</a>\n      </li>\n      <li>Extend server behavior with\n        <a href='http://expressjs.com/' target='_blank'>Express</a>\n      </li>\n      <li>Manage dependencies with\n        <a href='http://npmjs.org/' target='_blank'>NPM</a>\n      </li>\n    </ul>\n  </section>\n  <section>\n    <h2>Helpers</h2>\n    <p>Rygr also gives you some basic helpers to make it easy to keep your project up to date</p>\n    <ul>\n      <li>\n        Install NPM and Bower dependencies from a project with\n        <code>rygr install</code>\n      </li>\n      <li>\n        Update NPM and Bower dependencies with\n        <code>rygr update</code>\n      </li>\n    </ul>\n  </section>\n</article>");
+        return $o.join("\n").replace(/\s(?:id|class)=(['"])(\1)/mg, "");
+      };
+      return render.call(context);
+    };
+  });
+
+}).call(this);

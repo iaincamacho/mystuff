@@ -1,0 +1,27 @@
+{
+  "catchError": {
+    "define": true
+  },
+  "paths": {
+    "ngRoute": "angular-route",
+    "ngAnimate": "angular-animate"
+  },
+  "shim": {
+    "ngRoute": {
+      "deps": ["angular"],
+      "exports": "angular"
+    },
+    "clockpicker": {
+      "deps": ["jquery"],
+      "exports": "clockpicker"
+    },
+    "ngAnimate": {
+      "deps": ["angular"],
+      "exports": "angular"
+    },
+    "angular": {
+      "exports": "angular"
+    }
+  },
+  "baseUrl": "/assets"
+}

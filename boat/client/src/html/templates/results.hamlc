@@ -1,0 +1,5 @@
+.container
+  .header
+    %h1
+      Search Results (1)
+

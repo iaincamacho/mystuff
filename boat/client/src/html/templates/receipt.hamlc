@@ -1,0 +1,78 @@
+.container.boat
+  .header
+    %h1
+      Boat Registration
+    .rightSection
+      %a.unit
+        %img.clock{src: '/assets/back.jpg'}
+        .text
+          Return to
+          %br
+          Christopher R.
+  .leftSide.fee
+    %h3
+      Registration Completed Successfully
+    %p
+      The registration application has been successfuly submited with the Massachusetts Environmental Police Department.  Please print a copy of the Registration Card and the receipt for the patron.
+    .fieldset.half.first.inputless
+      %label
+        Registrant Information
+      %p
+        %a
+          Christopher Russell
+    .fieldset.half.last.inputless
+      %label
+        Vehicle HIN
+      %p
+        %a
+          {{boat.hin || '654 325 653 22 54 98 32168'}}
+    .fieldset.half.first.inputless
+      %label
+        Registration Confirmation Number
+      %p
+        554321-5653-556321
+    .fieldset.half.last.inputless
+      %label
+        Payment Confirmation Number
+      %p
+        5563-66325-665798-8
+    %a.lasttask
+      %i.fa.fa-files-o
+      %span
+        View Registration
+    %a.lasttask
+      %i.fa.fa-print
+      %span
+        Print Registration
+    %h3
+      Related Tasks
+    %ul.related
+      %li
+        .title
+          %a
+            Add a title to this boat
+      %li
+        .title
+          %a
+            Start another registration for Christopher Russell
+      %li
+        .title
+          %a
+            Start another vehicle title for Christopher Russell
+  .rightSide
+    .activity
+      .title
+        %a
+          New Boat Title
+    .activity
+      .title
+        %a
+          New ATV Registration
+    .activity
+      .title
+        %a
+          New Snowmobile Registration
+    .activity
+      .title
+        %a
+          Start a new search

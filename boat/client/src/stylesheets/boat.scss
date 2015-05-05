@@ -1,0 +1,64 @@
+.boat {
+  .searchIcon {
+    top:35px;
+  }
+  .noresult {
+    display:none;
+    position:relative;
+    float:left;
+    width:100%;
+    text-align:center;
+    color:$red;
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:$lightGrey;
+    border-radius:5px;
+  }
+  .advanced {
+    position:relative;
+    float:left;
+    margin:10px 0 0 10px;
+    font-size:.75em;
+  }
+  .advancedsearch {
+    display:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+  }
+
+  .engines {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    display:none;
+  }
+
+  .uploads .fieldset {
+    padding-bottom:15px;
+    border-bottom:1px dotted darken($lightGrey, 10%);
+
+    span.hidden {
+      display:none;
+      margin:5px 20px;
+      padding:0;
+      font-size:.7em;
+      color:$darkGrey;
+    }
+    .hidden {
+      display:none;
+    }
+    i.hidden {
+      color:$darkGrey;
+      margin-right:10px;
+    }
+    a.hidden {
+      float:right;
+      margin:8px 0 5px 10px;
+      font-size:.75em;
+    }
+  }
+}

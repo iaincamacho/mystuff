@@ -1,0 +1,16 @@
+.sidebar
+  %a{href: '/'}
+    %img.profile{src: '/assets/profile.jpg'}
+  %a{href: '/dashboard'}
+    %img{src: '/assets/dashboard.png'}
+    Dashboard
+  %a
+    %img{src: '/assets/registration.png'}
+    Registrations
+  %a
+    %img{src: '/assets/title.png'}
+    Vehicle Titles
+
+.wrapper{ng-view: true}
+
+

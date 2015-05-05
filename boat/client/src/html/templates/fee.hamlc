@@ -1,0 +1,59 @@
+.container.boat
+  .header
+    %h1
+      Boat Registration
+    .rightSection
+      %a.unit
+        %img.clock{src: '/assets/back.jpg'}
+        .text
+          Return to
+          %br
+          Christopher R.
+  .leftSide.fee
+    %h3
+      Registration Payment Information
+    %p
+      Please collect the $40 registration fee.
+    .fieldset.half.first{style: 'margin-right:200px;'}
+      %label
+        Payment Type
+      %input#check{type: 'radio', name: 'paymenttype', checked: false}
+      %label.radio{for: 'check'}
+        Check
+      %input#moneyorder{type: 'radio', name: 'paymenttype', checked: false}
+      %label.radio{for: 'moneyorder'}
+        %span
+        Money Order
+    .fieldset.half.last
+      %label
+        Check/Money Order Number
+      %input{type: 'text', placeholder: 'ex. 8839209 9203'}
+    %h3
+      Registration Decal Information
+    .fieldset.half.last{style: 'margin-top:0;'}
+      %label
+        Registration Decal Number
+      %input#regnumber{type: 'text', placeholder: 'ex. 126 688 97 5'}
+    .fieldset.half.last
+      %label
+        &nbsp;
+    %a.lightBlue{href: '/receipt', style: 'margin-top:60px;'}
+      Submit
+  .rightSide
+    .activity
+      .title
+        %a{href: '/boatregistration'}
+          Boat Details
+    .activity
+      .title
+        %a{href: '/owners'}
+          Registrant Information
+    .activity
+      .title
+        %a{href: '/documents'}
+          Documents
+    .activity.active
+      .title
+        %a{href: '/fee'}
+          %i.fa.fa-arrow-circle-o-left
+          Fees and Payments

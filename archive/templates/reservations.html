@@ -1,0 +1,355 @@
+<div class='header picnic'>
+  <div class='top'>
+    <div class='container'>
+      <img class='logo' src='./images/bridgeview-logo.png' alt='Department of Parks and Recreation - Bridgeview CA'>
+      <div class='nav'>
+        <ul>
+          <li class='tabletHidden'>
+            <a>
+              Explore
+            </a>
+          </li>
+          <li class='tabletHidden'>
+            <a>
+              Reservations
+            </a>
+          </li>
+          <li class='tabletHidden'>
+            <a>
+              Contact Us
+            </a>
+          </li>
+          <li class='profile'>
+            <a>
+              <img class='avatar' src='./images/profile.jpg'>
+              <img class='pointer' src='./images/pointer.png'>
+              <ul>
+                <li>
+                  My Reservations
+                </li>
+                <li>
+                  My League
+                </li>
+                <li>
+                  My Account
+                </li>
+                <li>
+                  My CivicID
+                </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class='headline'>
+    <div class='container'>
+      <h1>
+        Reserving Pavilions Or Facilities
+      </h1>
+    </div>
+  </div>
+</div>
+<div class='container picnic reservation'>
+  <div class='leftside'>
+    <h2>
+      Merry Islands Pavilion
+      <br>
+      <img src='./images/border.jpg'>
+    </h2>
+    <div class='fields image'>
+      <img class='main' src='./images/pavilion1.jpg'>
+    </div>
+    <div class='fields phonehidden'>
+      <h3>
+        Cart
+      </h3>
+      <div class='details'>
+        <ul>
+          <li>
+            <div class='label'>
+              Reservation Fee
+            </div>
+            <div class='info'>
+              ${{ cost }}
+            </div>
+          </li>
+          <li>
+            <div class='label'>
+              Park Cleanup Fee
+            </div>
+            <div class='info'>
+              ${{fee}}
+            </div>
+          </li>
+          <li class='discount'>
+            <div class='label'>
+              Resident Discount
+              <i class='fa fa-question-circle'>
+                <span>
+                  Based on your address, you get a discount for being a resident of Bridgeview, CA
+                </span>
+              </i>
+            </div>
+            <div class='info'>
+              (${{discount}})
+            </div>
+          </li>
+          <li class='total'>
+            <div class='label'>
+              Total
+            </div>
+            <div class='info'>
+              ${{ total }}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='fields'>
+      <h3>
+        Facility Details
+      </h3>
+      <p>
+        <i class='fa fa-male'></i>
+        Restrooms Available
+        <br>
+        <i class='fa fa-paw'></i>
+        Pet Friendly - Leash Required
+        <br>
+        <i class='fa fa-child'></i>
+        Good for Small Children
+        <br>
+        <i class='fa fa-wheelchair'></i>
+        Handicap Accessible
+      </p>
+    </div>
+  </div>
+  <div class='rightside'>
+    <h2>
+      <span class='tabletHidden'>
+        Your Information and
+      </span>
+      Reservation Details
+    </h2>
+    <p>
+      Please fill out the below form to reserve the Picnic Tables at Auborn Park (South).  If you're logged in, please make sure the information populated below is accurate and up to date.
+    </p>
+    <div class='form'>
+      <h3>
+        Reservation Information
+      </h3>
+      <div class='fieldset'>
+        <label>
+          Reservation Date
+        </label>
+        <input placeholder='ex 857-866-3400' type='date' value='2014-08-21'>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Reservation Time
+          <span id='timedisplay'></span>
+        </label>
+        <div class='timeline'>
+          <div class='blue piece'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available open'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              10am
+            </div>
+          </div>
+          <div class='blue piece'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              12pm
+            </div>
+          </div>
+          <a class='piece' id='twelve' ng-click='timeslot("twelve", 12, 2)'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              2pm
+            </div>
+          </a>
+          <a class='piece' id='two' ng-click='timeslot("two", 2, 4)'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              4pm
+            </div>
+          </a>
+          <a class='piece' id='four' ng-click='timeslot("four", 4, 6)'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              6pm
+            </div>
+          </a>
+          <a class='piece' id='six' ng-click='timeslot("six", 6, 8)'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              8pm
+            </div>
+          </a>
+          <a class='piece' id='eight' ng-click='timeslot("eight", 8, 10)'>
+            <div class='unavailable'>
+              Timeslot Unavailable
+            </div>
+            <div class='available'>
+              Timeslot Available
+            </div>
+            <div class='timeid'>
+              10pm
+            </div>
+          </a>
+          <div class='morning'>
+            8am
+          </div>
+        </div>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Event Title
+        </label>
+        <input class='watchname' placeholder='ex. Wedding, Birthday Party, Graduation' type='input' value=''>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Special Requests
+        </label>
+        <input class='watchrequest' placeholder='ex. Call Samuel with any questions' type='input' value=''>
+      </div>
+      <h3>
+        Personal Information
+      </h3>
+      <div class='fieldset'>
+        <label>
+          First Name
+        </label>
+        <input placeholder='First Name' type='text' value='Timothy'>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Last Name
+        </label>
+        <input placeholder='Last Name' type='text' value='Keough'>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Street Address
+        </label>
+        <input placeholder='ex. 18 10th Street' type='text' value='14 Mint Plaza'>
+      </div>
+      <div class='city fieldset'>
+        <label>
+          City
+        </label>
+        <input placeholder='ex. San Francisco' type='text' value='Bridgeview'>
+      </div>
+      <div class='fieldset state'>
+        <label>
+          State
+        </label>
+        <input placeholder='ex. CA' type='text' value='CA'>
+      </div>
+      <div class='fieldset zip'>
+        <label>
+          Zip
+          <span class='phonehidden'>
+            Code
+          </span>
+        </label>
+        <input placeholder='ex 94103' type='text' value='94103'>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Daytime Phone Number
+        </label>
+        <input placeholder='ex 857-866-3400' type='text' value='(857) 866-3400'>
+      </div>
+      <div class='fieldset'>
+        <label>
+          Email Address
+        </label>
+        <input placeholder='ex name@domain.com' type='text' value='tkeough@accela.com'>
+      </div>
+      <h3 class='mobileonly'>
+        Cart
+      </h3>
+      <div class='details mobileonly'>
+        <ul>
+          <li>
+            <div class='label'>
+              Reservation Fee
+            </div>
+            <div class='info'>
+              ${{ cost }}
+            </div>
+          </li>
+          <li>
+            <div class='label'>
+              Park Cleanup Fee
+            </div>
+            <div class='info'>
+              ${{fee}}
+            </div>
+          </li>
+          <li class='discount'>
+            <div class='label'>
+              Resident Discount
+            </div>
+            <div class='info'>
+              (${{discount}})
+            </div>
+          </li>
+          <li class='total'>
+            <div class='label'>
+              Total
+            </div>
+            <div class='info'>
+              ${{ total }}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h3>
+        Terms and Conditions
+      </h3>
+      <p>
+        Picnic Tables at Auborn Park (South) is a public space operated by the City of Bayview Parks and Recreation department.  All payments are due the day of the reservation.  Please call Greg Patterson (Parks and Recreation Asset Manager) if you have any questions.  Your reserved space may be roped off to the public until your event.  A park faculty manager will come to the location and remove the roping 15 minutes before your event.  There is a <strong>$35</strong> dollar clean up fee for not cleaning up after your event.  By clicking Submit, you are agreeing to the above stated terms and conditions.
+      </p>
+      <div class='submit'>
+        <a href='/confirmation'>
+          Submit
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

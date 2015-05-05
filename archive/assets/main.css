@@ -1,0 +1,936 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  position: relative;
+  float: left;
+  margin: 0;
+  width: 100%;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  background: #fefefe;
+  font-size: 16px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.container {
+  position: relative;
+  float: none;
+  margin: 0px auto;
+  max-width: 1280px;
+  width: 100%; }
+
+a {
+  color: #0193cf;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  a:hover {
+    text-decoration: none; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.25em; }
+
+input[type="date"] {
+  background: url('../images/calendar-icon.jpg') right center no-repeat !important; }
+
+.mobileonly {
+  display: none; }
+
+.footer {
+  position: relative;
+  float: left;
+  margin: 100px 0 0 0;
+  padding: 0;
+  width: 100%;
+  min-height: 1000px;
+  background: #333;
+  color: #fff; }
+  .footer a {
+    color: #fff; }
+  .footer .column {
+    position: relative;
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 0; }
+    .footer .column h4 {
+      position: relative;
+      float: left;
+      margin: 40px 0 20px 0;
+      padding: 0;
+      border-bottom: 1px solid #ccc; }
+    .footer .column ul {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style: none; }
+      .footer .column ul li {
+        position: relative;
+        float: left;
+        margin: 2px 0;
+        padding: 2px 0;
+        width: 100%;
+        list-style: inherit; }
+        .footer .column ul li i {
+          position: relative;
+          float: left;
+          width: 40px;
+          text-align: left; }
+        .footer .column ul li:hover {
+          text-decoration: underline; }
+
+.superheader {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 12px; }
+  .superheader i {
+    padding-right: 5px; }
+
+.header {
+  position: relative;
+  float: left;
+  margin: 0 0 5px 0;
+  padding: 10px 0 0 0;
+  width: 100%;
+  background: url('../images/forest-bg.jpg') center center no-repeat;
+  background-size: cover; }
+  .header .top {
+    position: relative;
+    float: left;
+    margin: 0 0;
+    padding: 0;
+    width: 100%; }
+  .header .logo {
+    position: relative;
+    float: left;
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .header .logo:hover {
+      opacity: 0.9; }
+  .header .nav ul {
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .header .nav ul li {
+      position: relative;
+      float: left;
+      margin: 20px 0;
+      padding: 0;
+      display: inline-block; }
+      .header .nav ul li a {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0 15px;
+        color: #ffffff;
+        cursor: pointer;
+        opacity: 0.8;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+        .header .nav ul li a:hover {
+          opacity: 0.99; }
+      .header .nav ul li.profile {
+        margin-top: 0;
+        padding-bottom: 20px; }
+        .header .nav ul li.profile a {
+          padding-right: 0;
+          opacity: 1;
+          cursor: pointer; }
+          .header .nav ul li.profile a img.avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 4px solid #01709c;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s; }
+          .header .nav ul li.profile a:hover img.avatar {
+            border: 4px solid #0193cf; }
+        .header .nav ul li.profile:hover .pointer {
+          opacity: 1; }
+        .header .nav ul li.profile:hover ul {
+          display: block;
+          opacity: 0.99;
+          height: 160px; }
+      .header .nav ul li .pointer {
+        position: absolute;
+        opacity: 0;
+        bottom: -13px;
+        left: 50%;
+        margin-left: -2px;
+        -webkit-transition: opacity 0.3;
+        -moz-transition: opacity 0.3;
+        transition: opacity 0.3; }
+      .header .nav ul li ul {
+        height: 0;
+        opacity: 0.3;
+        overflow: hidden;
+        position: absolute;
+        top: 70px;
+        right: -50px;
+        width: 160px;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.8);
+        -webkit-transition: opacity 0.3s, height 0.3s;
+        -moz-transition: opacity 0.3s, height 0.3s;
+        transition: opacity 0.3s, height 0.3s; }
+        .header .nav ul li ul li {
+          margin: 0;
+          padding: 10px 20px;
+          width: 100%;
+          color: #666666;
+          -webkit-transition: background 0.3s;
+          -moz-transition: background 0.3s;
+          transition: background 0.3s; }
+          .header .nav ul li ul li:hover {
+            color: #333;
+            background: #ffffff; }
+        .header .nav ul li ul:hover {
+          display: block;
+          opacity: 0.99; }
+  .header .headline .container {
+    max-width: 940px; }
+    .header .headline .container h1 {
+      position: relative;
+      float: left;
+      margin: 0 0 30px 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      font-size: 3em;
+      text-transform: capitalize; }
+      .header .headline .container h1 .light {
+        line-height: 2em;
+        font-weight: 300;
+        font-size: 0.5em; }
+  .header .types {
+    position: relative;
+    float: left;
+    margin: 0 2% 40px 2%;
+    padding: 0;
+    width: 21%;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .header .types .holder {
+      position: relative;
+      float: left;
+      padding-bottom: 5%;
+      width: 100%;
+      border: 4px solid #0193cf;
+      border-radius: 5px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 1.5em;
+      color: #333;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .header .types .holder img {
+        position: relative;
+        float: left;
+        margin: 0 0 5% 0%;
+        width: 100%; }
+      .header .types .holder a {
+        color: #333; }
+      .header .types .holder .hidden {
+        position: relative;
+        float: left;
+        margin: 0 0;
+        padding: 0;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all, 0.3s;
+        -moz-transition: all, 0.3s;
+        transition: all, 0.3s; }
+        .header .types .holder .hidden input {
+          position: relative;
+          float: left;
+          margin: 5px 2% 0 3%;
+          padding: 5 5px;
+          width: 93%;
+          box-sizing: border-box;
+          font-size: 0.75em;
+          font-weight: 300;
+          background: none;
+          border: 1px solid #aaa;
+          border-radius: 5px;
+          font-family: 'Lato', sans-serif; }
+          .header .types .holder .hidden input.date {
+            background: url('../images/calendar-icon.jpg') right center no-repeat !important; }
+          .header .types .holder .hidden input.time {
+            background: url('../images/time-icon.jpg') right center no-repeat !important; }
+        .header .types .holder .hidden a {
+          position: relative;
+          float: left;
+          margin: 5px 2% 0 3%;
+          padding: 5 0;
+          width: 95%;
+          text-align: center;
+          color: #ffffff !important;
+          background: #0193cf;
+          border-radius: 5px; }
+          .header .types .holder .hidden a:hover {
+            color: #ffffff; }
+          .header .types .holder .hidden a i {
+            position: absolute;
+            right: 15px;
+            padding: 0;
+            color: #ffffff; }
+    .header .types.activated .holder {
+      padding-bottom: 5px;
+      background: #ffffff; }
+    .header .types.activated .hidden {
+      margin: 10px 0;
+      height: 125px;
+      opacity: 1;
+      overflow: auto; }
+    .header .types:hover {
+      background: rgba(255, 255, 255, 0.99); }
+      .header .types:hover .holder, .header .types:hover .holder a {
+        color: #0193cf; }
+  .header .types.dimmed {
+    opacity: 0.4; }
+    .header .types.dimmed#theone {
+      opacity: 1; }
+  .header .viewmore {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center;
+    background: url(../images/view-more-border.png) bottom center no-repeat;
+    opacity: 0.6;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .header .viewmore:hover {
+      opacity: 0.99; }
+
+.details {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .details .container {
+    max-width: 940px; }
+  .details p {
+    font-size: 1.25em;
+    font-weight: 300; }
+  .details .left {
+    position: relative;
+    float: left;
+    margin: 30px 0;
+    padding: 0;
+    width: 50%;
+    border: 2px solid #efefef;
+    box-sizing: border-box; }
+    .details .left img {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 268px;
+      overflow: hidden; }
+  .details .right {
+    position: relative;
+    float: right;
+    height: 272px;
+    margin: 30px 0;
+    padding: 90px;
+    width: 50%;
+    border: 2px solid #efefef;
+    background: #fafafa;
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center; }
+
+.picnic .header {
+  background: url('../images/picnic-bg.jpg') center center no-repeat;
+  background-size: cover; }
+.picnic .leftside {
+  position: relative;
+  float: left;
+  margin: 20px;
+  padding: 0;
+  border-size: box-border;
+  width: 20%; }
+  .picnic .leftside h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    text-align: left; }
+    .picnic .leftside h2 img {
+      width: 100%;
+      height: 3px; }
+  .picnic .leftside img.main {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0 20px 0 0;
+    width: 100%;
+    box-sizing: border-box; }
+  .picnic .leftside .fieldset {
+    position: relative;
+    float: left;
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: 100%; }
+    .picnic .leftside .fieldset input {
+      position: relative;
+      float: left;
+      margin: 7px 10px;
+      padding: 0;
+      border: 1px solid #ccc; }
+      .picnic .leftside .fieldset input[type='date'], .picnic .leftside .fieldset input.time {
+        position: relative;
+        float: left;
+        width: 90%;
+        padding: 10px 0 10px 10px;
+        margin: 0 2%;
+        font-size: 1em;
+        font-family: 'Lato', sans-serif;
+        box-sizing: padding-box; }
+      .picnic .leftside .fieldset input.time {
+        background: url('../images/time-icon.jpg') right center no-repeat !important; }
+    .picnic .leftside .fieldset label {
+      position: relative;
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 0;
+      width: 120px;
+      font-size: 1.2em; }
+    .picnic .leftside .fieldset.date {
+      width: 100%; }
+  .picnic .leftside .fields {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 20px 0 0 0;
+    width: 100%;
+    border-right: 1px solid #ccc; }
+    .picnic .leftside .fields h3 {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin: 0 0 10px 0; }
+    .picnic .leftside .fields p {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin: 0 0 30px 0; }
+.picnic .rightside {
+  position: relative;
+  float: left;
+  margin: 20px 0 0 1%;
+  padding: 0;
+  width: 74%; }
+  .picnic .rightside .result {
+    position: relative;
+    float: left;
+    margin: 25px 0 15px 0;
+    padding: 0 0 30px 0;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    overflow-x: hidden; }
+    .picnic .rightside .result .morning {
+      top: 12px; }
+    .picnic .rightside .result h4 {
+      position: relative;
+      float: left;
+      margin: 0 0 10px 0;
+      padding: 0 0 10px 0;
+      width: 100%;
+      border-bottom: 1px solid #0193cf; }
+      .picnic .rightside .result h4 a.viewMap {
+        margin-left: 10px;
+        padding: 0px 4px 2px 4px;
+        border-radius: 4px;
+        font-size: 0.75em;
+        font-weight: 300;
+        border: 1px solid #ccc; }
+    .picnic .rightside .result ul {
+      width: 70%; }
+    .picnic .rightside .result img {
+      position: relative;
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 0;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      width: 25%; }
+    .picnic .rightside .result .details {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      width: auto;
+      width: 70%; }
+      .picnic .rightside .result .details .select {
+        position: relative;
+        float: left;
+        padding: 30px 0 20px 5%;
+        width: 30%;
+        box-sizing: border-box; }
+        .picnic .rightside .result .details .select h5 {
+          margin: 0; }
+        .picnic .rightside .result .details .select a {
+          position: relative;
+          float: right;
+          margin: 0;
+          padding: 10px 15px;
+          background: #0193cf;
+          border-radius: 10px;
+          color: #ffffff;
+          opacity: 0.8; }
+          .picnic .rightside .result .details .select a:hover {
+            opacity: 0.99; }
+          .picnic .rightside .result .details .select a.disabled {
+            cursor: default;
+            background: #aaa; }
+
+.picnic.reservation h2 {
+  margin: 10px 0 0 0;
+  text-align: left; }
+.picnic.reservation h3 {
+  font-weight: 500; }
+.picnic.reservation .leftside p, .picnic.reservation .leftside h2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .picnic.reservation .leftside p i, .picnic.reservation .leftside h2 i {
+    margin: 8px 8px;
+    padding: 0px;
+    width: 1em;
+    text-align: center;
+    box-sizing: border-box; }
+.picnic.reservation .leftside .fields p {
+  margin: 0;
+  padding: 0; }
+.picnic.reservation .leftside img.main {
+  margin: 0 20px 0 0;
+  width: 92%;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px; }
+.picnic.reservation .leftside .discount {
+  border-bottom: none; }
+  .picnic.reservation .leftside .discount .info {
+    color: #A52A2A; }
+  .picnic.reservation .leftside .discount i {
+    padding-left: 5px;
+    color: #0193cf; }
+    .picnic.reservation .leftside .discount i span {
+      position: absolute;
+      top: -35px;
+      left: 50px;
+      padding: 5px;
+      width: 210px;
+      color: #333;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 0.6em;
+      text-align: center;
+      z-index: 1000;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      display: none;
+      opacity: 0; }
+    .picnic.reservation .leftside .discount i:hover span {
+      display: block;
+      opacity: 0.99; }
+.picnic.reservation .leftside .total {
+  font-weight: bold;
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 2px solid #ccc;
+  border-bottom: none; }
+.picnic.reservation .rightside {
+  margin-top: 0;
+  padding-top: 0; }
+  .picnic.reservation .rightside h3 {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    width: 95%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc; }
+  .picnic.reservation .rightside p {
+    margin: 0; }
+  .picnic.reservation .rightside .form {
+    position: relative;
+    float: left;
+    margin: 0 5%;
+    padding: 0;
+    width: 90%; }
+  .picnic.reservation .rightside .fieldset {
+    position: relative;
+    float: left;
+    margin: 0 5% 0 0;
+    padding: 0;
+    width: 45%; }
+    .picnic.reservation .rightside .fieldset.city {
+      width: 17%; }
+    .picnic.reservation .rightside .fieldset.state {
+      width: 8%; }
+    .picnic.reservation .rightside .fieldset.zip {
+      width: 10%;
+      margin-right: 0; }
+    .picnic.reservation .rightside .fieldset.time {
+      width: 20%; }
+  .picnic.reservation .rightside p {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0 0 10px 0;
+    width: 95%;
+    text-align: justify; }
+  .picnic.reservation .rightside input {
+    position: relative;
+    float: left;
+    margin: 10px 0;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 300;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif; }
+
+.submit a {
+  position: relative;
+  float: right;
+  margin: 0 40px 60px 0;
+  padding: 10px 15px;
+  background: #0193cf;
+  border-radius: 10px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 1.25em; }
+
+.timeline {
+  position: relative;
+  float: right;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  border: solid 2px #cccccc;
+  border-radius: 5px;
+  background: #fff; }
+  .timeline.dark {
+    background: #808080; }
+  .timeline .piece {
+    position: relative;
+    float: left;
+    width: 14%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-right: 1px solid #aaa;
+    box-sizing: border-box;
+    height: 100%; }
+    .timeline .piece.blue {
+      background: #808080; }
+    .timeline .piece.selected {
+      background: #0193cf; }
+    .timeline .piece .unavailable, .timeline .piece .available {
+      position: absolute;
+      opacity: 0;
+      left: 50%;
+      top: -35px;
+      margin-left: -55px;
+      width: 110px;
+      text-align: center;
+      font-size: 0.75em;
+      font-weight: 300;
+      padding: 5px 10px;
+      background: #fefefe;
+      border: 1px solid #efefef;
+      box-shadow: 1px 1px 1px #efefef;
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      transition: all, 0.3s;
+      z-index: 1000; }
+    .timeline .piece:hover .available {
+      opacity: 0.99;
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      transition: all, 0.3s; }
+    .timeline .piece:hover.blue .available {
+      opacity: 0;
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      transition: all, 0.3s; }
+    .timeline .piece:hover.blue .unavailable {
+      opacity: 0.99;
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      transition: all, 0.3s; }
+
+.morning {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  font-size: 0.55em;
+  font-weight: 300; }
+
+.evening {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 0.6em;
+  font-weight: 300; }
+
+.picnic .timeline {
+  width: 30%; }
+
+.picnic .fieldset .timeline {
+  width: 100%;
+  height: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background: #808080; }
+
+.timeid {
+  position: absolute;
+  right: -10px;
+  bottom: -14px;
+  font-size: 0.5em;
+  color: #333; }
+
+.details {
+  width: 100%; }
+  .details ul {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 92%;
+    list-style: none; }
+    .details ul li {
+      position: relative;
+      float: left;
+      margin: 5px 0;
+      padding: 0 0 2px 0;
+      width: 100%;
+      border-bottom: 1px solid #efefef; }
+      .details ul li .label {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0; }
+      .details ul li .info {
+        position: relative;
+        float: right;
+        margin: 0;
+        padding: 0; }
+        .details ul li .info a span {
+          opacity: 0;
+          position: absolute;
+          top: -32px;
+          left: -45px;
+          padding: 5px 10px;
+          color: #333;
+          background: #ffffff;
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 2px #eee;
+          width: 90px;
+          text-align: center;
+          -webkit-transition: all, 0.3s;
+          -moz-transition: all, 0.3s;
+          transition: all, 0.3s; }
+        .details ul li .info a:hover span {
+          opacity: 1; }
+        .details ul li .info i {
+          padding: 0 10px; }
+
+.result .details ul li .info i {
+  padding: 0 3px;
+  color: #888; }
+
+.half {
+  position: relative;
+  float: left;
+  margin: 0 5% 0 0;
+  width: 45%; }
+
+@media all and (max-width: 1155px) {
+  .picnic.reservation .rightside .form {
+    margin: 0;
+    width: 100%; }
+  .header .nav ul li.profile:hover ul, .header .nav ul li.profile:hover .pointer {
+    display: none; }
+  .picnic .leftside h2 {
+    line-height: 1.5em;
+    font-size: 1.25em; }
+  .picnic .leftside .fields h3 {
+    font-size: 1em;
+    font-weight: 500; }
+  .picnic .leftside .fieldset label {
+    font-size: 1em; }
+  .half {
+    width: 100%; } }
+
+@media all and (max-width: 950px) {
+  .details .left, .details .right {
+    display: none; }
+  .picnic .leftside {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden; }
+    .picnic .leftside .fields {
+      width: 30%;
+      margin-right: 3%;
+      border-right: none; }
+  .picnic .rightside {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden; }
+  .tabletHidden {
+    display: none !important; } }
+
+@media all and (max-width: 750px) {
+  .picnic .rightside .result ul {
+    width: 100%; }
+  .picnic .rightside .result .details .select {
+    width: 100%; }
+    .picnic .rightside .result .details .select a {
+      position: relative;
+      float: left;
+      margin: 0px 45% 0px 5%;
+      width: 50%;
+      text-align: center; }
+  .header .types {
+    width: 40%;
+    margin: 5%; } }
+
+@media all and (max-width: 650px) {
+  .nav {
+    display: none; }
+  .header .logo {
+    margin: 5px 25%;
+    width: 50%; }
+  .picnic.reservation .rightside .fieldset {
+    width: 95%;
+    margin: 10px 0; }
+  .picnic.reservation .rightside .fieldset.city {
+    width: 50%; }
+  .picnic.reservation .rightside .fieldset.state, .picnic.reservation .rightside .fieldset.zip {
+    width: 15%;
+    margin-left: 5%; }
+  .picnic.reservation .rightside .fieldset.zip {
+    width: 20%;
+    margin-left: 5%; }
+  .picnic .timeline {
+    display: none; }
+  .picnic .fieldset .timeline {
+    display: block;
+    height: 20px; }
+  .picnic .leftside {
+    display: none; }
+  .picnic.reservation .leftside {
+    display: block !important; }
+    .picnic.reservation .leftside .fields.image {
+      width: 100%; }
+      .picnic.reservation .leftside .fields.image img {
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+    .picnic.reservation .leftside .fields {
+      width: 45%; }
+  .mobileonly {
+    display: block; }
+  .header .types .holder .hidden a i {
+    display: none; }
+  .header .types .holder .hidden input.date, .header .types .holder .hidden input.time {
+    background: #ffffff !important; }
+  .picnic.reservation .leftside .discount i {
+    display: none; } }
+
+@media all and (max-width: 500px) {
+  .picnic .rightside .result img {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .picnic .rightside .result .details {
+    width: 100%;
+    margin-top: 20px; }
+  .picnic .rightside .result .details .select a {
+    margin: 0;
+    width: 90%;
+    box-sizing: border-box; }
+  .header .types .holder {
+    font-size: 1.2em; }
+  .picnic.reservation .leftside .fields {
+    width: 100%; }
+  .phonehidden {
+    display: none !important; }
+  .picnic.reservation .rightside .fieldset.city {
+    width: 30%;
+    margin-left: 0%; }
+  .picnic.reservation .rightside .fieldset.state {
+    width: 30%;
+    margin-left: 2%; }
+  .picnic.reservation .rightside .fieldset.zip {
+    width: 30%;
+    margin-left: 2%; }
+  .submit {
+    width: 100%; }
+    .submit a {
+      width: 50%;
+      margin: 10px 25%;
+      box-sizing: border-box;
+      text-align: center; }
+  .timeline .piece:hover .unavailable, .timeline .piece:hover .available {
+    display: none; } }
